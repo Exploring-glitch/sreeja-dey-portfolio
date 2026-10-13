@@ -142,3 +142,8 @@ src/components/          # Navbar, Hero, About, Skills, Projects,
 - GitHub: https://github.com/Exploring-glitch
 - LinkedIn: https://www.linkedin.com/in/sreeja-dey-858395317/
 - LeetCode: https://leetcode.com/u/sreeja_solves/
+
+---
+
+Thank you for visiting! If my work looks like a fit for your team, I'd love
+to hear from you — see the Contact section above for how to reach me.

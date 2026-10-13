@@ -114,11 +114,11 @@ No screenshots committed yet. To add them later, place files under
 
 All portfolio content lives in `src/data/portfolio.js`:
 
-- `profile.email` — empty by default, so the UI shows an
-  "Email on request" placeholder instead of inventing an address.
-  Set it to a real public address to enable the `mailto:` button.
-- `profile.resumeUrl` — empty by default, so the navbar hides the
-  Resume button. Set it to a hosted resume PDF to show it.
+- `profile.email` / `profile.phone` — public contact details shown in
+  the Contact section as `mailto:` / `tel:` links.
+- `profile.photo` — path to the hero portrait (`public/sreeja-profile.jpg`).
+- `profile.resumeUrl` — path to the resume PDF (`public/sreeja-dey-resume.pdf`);
+  powers the Download Resume buttons in the hero, navbar, and contact sections.
 - `projects[]` — only add links you have verified; use
   `status: "in-progress"` and omit URLs for unfinished work.
 

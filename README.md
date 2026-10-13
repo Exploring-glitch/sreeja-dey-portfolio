@@ -89,6 +89,23 @@ No screenshots committed yet. To add them later, place files under
 ![Projects](./public/screenshot-projects.png)
 -->
 
+## Featured projects (in display order)
+
+1. **StatiQ** — job platform connecting job seekers with opportunities
+   plus employer-facing functionality. Live:
+   https://stati-q.vercel.app/
+2. **Waverly** — college-focused, LinkedIn-inspired social platform
+   (React, Node.js, Express.js, MongoDB). GitHub:
+   https://github.com/Exploring-glitch/Waverly — Live:
+   https://waverly-six.vercel.app
+3. **Task Manager** — role-based task management app with dashboard
+   (stack verified against repo source). GitHub:
+   https://github.com/Exploring-glitch/Task-Manager
+4. **URL Shortener** — MERN URL shortener. Live:
+   https://url-shortener-45vx.vercel.app/ — API:
+   https://url-shortener-n4ee.onrender.com — GitHub (verified):
+   https://github.com/Exploring-glitch/URL-Shortener
+
 ## Customising content
 
 All portfolio content lives in `src/data/portfolio.js`:

@@ -10,6 +10,14 @@ function StatusBadge({ status }) {
       </span>
     );
   }
+  if (status === "complete") {
+    return (
+      <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600 ring-1 ring-slate-200">
+        <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-slate-400" />
+        Complete
+      </span>
+    );
+  }
   return (
     <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-2.5 py-1 text-xs font-medium text-amber-700 ring-1 ring-amber-200">
       <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-amber-500" />
@@ -32,16 +40,18 @@ export default function ProjectCard({ project }) {
         {project.description}
       </p>
 
-      <ul aria-label={`${project.name} technologies`} className="mt-4 flex flex-wrap gap-1.5">
-        {project.tech.map((t) => (
-          <li
-            key={t}
-            className="rounded-md bg-[#FAFAF9] px-2 py-1 text-xs font-medium text-[#44403C] ring-1 ring-[#E7E5E4]"
-          >
-            {t}
-          </li>
-        ))}
-      </ul>
+      {project.tech && (
+        <ul aria-label={`${project.name} technologies`} className="mt-4 flex flex-wrap gap-1.5">
+          {project.tech.map((t) => (
+            <li
+              key={t}
+              className="rounded-md bg-[#FAFAF9] px-2 py-1 text-xs font-medium text-[#44403C] ring-1 ring-[#E7E5E4]"
+            >
+              {t}
+            </li>
+          ))}
+        </ul>
+      )}
       {project.techNote && (
         <p className="mt-2 text-xs leading-relaxed text-[#57534E]">{project.techNote}</p>
       )}

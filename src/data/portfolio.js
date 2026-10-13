@@ -55,10 +55,17 @@ export const skillGroups = [
 
 export const projects = [
   {
+    name: "StatiQ",
+    description:
+      "A job platform designed to connect job seekers with opportunities and provide employer-facing functionality.",
+    live: "https://stati-q.vercel.app/",
+    status: "live",
+  },
+  {
     name: "Waverly",
     description:
       "A college-focused, LinkedIn-inspired social platform connecting students and alumni. Supports profiles, posts with threaded discussions, connections, real-time notifications, and global search.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io"],
+    tech: ["React", "Node.js", "Express.js", "MongoDB"],
     github: "https://github.com/Exploring-glitch/Waverly",
     live: "https://waverly-six.vercel.app",
     status: "live",
@@ -67,11 +74,10 @@ export const projects = [
     name: "Task Manager",
     description:
       "Full-stack task management app with admin and team-member roles. Admins assign and manage tasks; members track progress from a dashboard with analytics, reports, and profile uploads.",
+    // Stack verified against the repository source (no live URL provided).
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
     github: "https://github.com/Exploring-glitch/Task-Manager",
-    // Verified from the repository's own About/README (not invented).
-    live: "https://task-manager-pi-eight-72.vercel.app/",
-    status: "live",
+    status: "complete",
   },
   {
     name: "URL Shortener",
@@ -84,21 +90,6 @@ export const projects = [
     live: "https://url-shortener-45vx.vercel.app",
     backend: "https://url-shortener-n4ee.onrender.com",
     status: "live",
-  },
-  {
-    name: "StatiQ",
-    description:
-      "Job-platform concept inspired by products like Wellfound, intended to support job seekers and employers with company profiles and job listings. Currently in progress — scope and features are still being finalised.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB"],
-    status: "in-progress",
-  },
-  {
-    name: "ArogyaAi",
-    description:
-      "Hackathon project: scan packaged-food labels to interpret nutritional information and suggest alternatives. Explored with mobile + OCR + LLM APIs. Prototype scope — not a production launch, no prize claimed.",
-    tech: ["React Native", "Expo", "OCR", "Gemini API"],
-    techNote: "Stack per hackathon scope; not independently verified here.",
-    status: "in-progress",
   },
 ];
 

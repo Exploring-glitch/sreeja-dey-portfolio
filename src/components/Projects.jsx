@@ -9,9 +9,9 @@ export default function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Featured work"
-          description="Real projects with verified links only. Anything still being built is marked In Progress — no fake demos."
+          description="Real projects with verified links only — no fake demos, screenshots, or invented features."
         />
-        <div className="grid items-stretch gap-5 md:grid-cols-2 [&>*:last-child:nth-child(odd)]:md:col-span-2">
+        <div className="grid items-stretch gap-5 md:grid-cols-2">
           {projects.map((p) => (
             <ProjectCard key={p.name} project={p} />
           ))}

@@ -19,7 +19,7 @@ export default function Contact() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
               <GithubIcon size={16} />
               GitHub
@@ -28,7 +28,7 @@ export default function Contact() {
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
               <LinkedinIcon size={16} />
               LinkedIn
@@ -37,7 +37,7 @@ export default function Contact() {
               href={profile.leetcode}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
               <LeetcodeIcon size={16} />
               LeetCode

@@ -35,7 +35,7 @@ export default function Dsa() {
               href={profile.leetcode}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg bg-[#1C1917] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-lg bg-[#1C1917] px-4 py-2 text-sm font-medium text-white transition hover:bg-[#3B6EA5]"
             >
               LeetCode profile
               <ArrowUpRight size={15} aria-hidden="true" />
@@ -44,7 +44,7 @@ export default function Dsa() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-lg border border-[#E7E5E4] px-4 py-2 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-lg border border-[#E7E5E4] px-4 py-2 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
               <GithubIcon size={15} />
               GitHub

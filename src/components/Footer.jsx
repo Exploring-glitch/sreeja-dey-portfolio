@@ -10,13 +10,13 @@ export default function Footer() {
         <p className="text-sm text-[#57534E]">
           © {year} {profile.name}. Built with React &amp; Tailwind CSS.
         </p>
-        <div className="flex items-center gap-4 text-sm font-medium">
+        <div className="flex items-center gap-1 text-sm font-medium">
           <a
             href={profile.github}
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="inline-flex items-center gap-1.5 text-[#57534E] transition hover:text-[#3B6EA5]"
+            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md px-2 text-[#57534E] transition hover:text-[#3B6EA5]"
           >
             <GithubIcon size={16} />
             <span className="sr-only sm:not-sr-only">GitHub</span>
@@ -26,7 +26,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="inline-flex items-center gap-1.5 text-[#57534E] transition hover:text-[#3B6EA5]"
+            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md px-2 text-[#57534E] transition hover:text-[#3B6EA5]"
           >
             <LinkedinIcon size={16} />
             <span className="sr-only sm:not-sr-only">LinkedIn</span>
@@ -36,7 +36,7 @@ export default function Footer() {
             target="_blank"
             rel="noreferrer"
             aria-label="LeetCode"
-            className="inline-flex items-center gap-1.5 text-[#57534E] transition hover:text-[#3B6EA5]"
+            className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md px-2 text-[#57534E] transition hover:text-[#3B6EA5]"
           >
             <LeetcodeIcon size={16} />
             <span className="sr-only sm:not-sr-only">LeetCode</span>

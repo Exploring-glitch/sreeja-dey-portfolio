@@ -5,14 +5,15 @@ export const profile = {
   tagline: "I enjoy turning ideas into useful digital products.",
   summary:
     "I'm a BCA student and aspiring software engineer focused on full-stack development, building practical projects, and strengthening my problem-solving skills through DSA.",
-  // No public contact email confirmed — keep empty so UI shows a placeholder
-  // instead of inventing an address. Set to a real address to enable mailto.
-  email: "",
+  // Public contact details — intentionally published on the site.
+  email: "sreejadey2007@gmail.com",
+  phone: "+91 9064574884",
+  // Served from public/ — works on dev and on Vercel production builds.
+  photo: "/sreeja-profile.jpg",
   github: "https://github.com/Exploring-glitch",
   linkedin: "https://www.linkedin.com/in/sreeja-dey-858395317/",
   leetcode: "https://leetcode.com/u/sreeja_solves/",
-  // No resume file in repo yet — Navbar hides the button until this is set.
-  resumeUrl: "",
+  resumeUrl: "/sreeja-dey-resume.pdf",
 };
 
 export const navLinks = [

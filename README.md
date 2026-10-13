@@ -1,5 +1,7 @@
 # Sreeja Dey — Developer Portfolio
 
+**Live:** https://sreeja-dey-portfolio.vercel.app/
+
 Personal developer portfolio for **Sreeja Dey**, BCA student at
 Techno India University, Kolkata and aspiring full-stack developer.
 

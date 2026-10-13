@@ -57,7 +57,7 @@ export const projects = [
   {
     name: "StatiQ",
     description:
-      "A job platform designed to connect job seekers with opportunities and provide employer-facing functionality.",
+      "StatiQ is a hiring marketplace that streamlines the recruitment process for both job seekers and employers. Candidates can explore opportunities, save relevant positions, and submit applications with personalized pitches, while employers can publish job listings, evaluate applicants, and manage candidates throughout the hiring pipeline.",
     live: "https://stati-q.vercel.app/",
     status: "live",
   },

@@ -103,7 +103,8 @@ No screenshots committed yet. To add them later, place files under
    https://waverly-six.vercel.app
 3. **Task Manager** — role-based task management app with dashboard
    (stack verified against repo source). GitHub:
-   https://github.com/Exploring-glitch/Task-Manager
+   https://github.com/Exploring-glitch/Task-Manager — Live:
+   https://task-manager-pi-eight-72.vercel.app/
 4. **URL Shortener** — MERN URL shortener. Live:
    https://url-shortener-45vx.vercel.app/ — API:
    https://url-shortener-n4ee.onrender.com — GitHub (verified):

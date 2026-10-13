@@ -20,15 +20,15 @@ function StatusBadge({ status }) {
 
 export default function ProjectCard({ project }) {
   return (
-    <article className="reveal flex flex-col rounded-xl border border-[#E7E5E4] bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-16px_rgba(28,25,23,0.3)]">
+    <article className="reveal flex min-w-0 flex-col rounded-xl border border-[#E7E5E4] bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-16px_rgba(28,25,23,0.3)]">
       <div className="flex items-start justify-between gap-3">
-        <h3 className="text-lg font-semibold tracking-tight text-[#1C1917]">
+        <h3 className="min-w-0 text-lg font-semibold tracking-tight text-[#1C1917]">
           {project.name}
         </h3>
         <StatusBadge status={project.status} />
       </div>
 
-      <p className="mt-2 flex-1 text-[15px] leading-relaxed text-[#57534E]">
+      <p className="mt-2 flex-1 text-[15px] leading-relaxed text-pretty text-[#57534E]">
         {project.description}
       </p>
 
@@ -43,11 +43,12 @@ export default function ProjectCard({ project }) {
         ))}
       </ul>
       {project.techNote && (
-        <p className="mt-2 text-xs text-[#8A8580]">{project.techNote}</p>
+        <p className="mt-2 text-xs leading-relaxed text-[#57534E]">{project.techNote}</p>
       )}
 
       {(project.live || project.github || project.backend) && (
-        <div className="mt-5 flex flex-wrap gap-2 border-t border-[#E7E5E4] pt-4">
+        <div className="mt-auto pt-5">
+          <div className="flex flex-wrap gap-2 border-t border-[#E7E5E4] pt-4">
           {project.live && (
             <a
               href={project.live}
@@ -81,6 +82,7 @@ export default function ProjectCard({ project }) {
               API
             </a>
           )}
+          </div>
         </div>
       )}
     </article>

@@ -91,8 +91,11 @@ No screenshots committed yet. To add them later, place files under
 
 ## Featured projects (in display order)
 
-1. **StatiQ** — job platform connecting job seekers with opportunities
-   plus employer-facing functionality. Live:
+1. **StatiQ** — hiring marketplace streamlining recruitment for
+   job seekers and employers: candidates explore opportunities, save
+   positions, and apply with personalized pitches; employers publish
+   listings, evaluate applicants, and manage candidates through the
+   hiring pipeline. Live:
    https://stati-q.vercel.app/
 2. **Waverly** — college-focused, LinkedIn-inspired social platform
    (React, Node.js, Express.js, MongoDB). GitHub:

@@ -74,10 +74,11 @@ export const projects = [
     name: "Task Manager",
     description:
       "Full-stack task management app with admin and team-member roles. Admins assign and manage tasks; members track progress from a dashboard with analytics, reports, and profile uploads.",
-    // Stack verified against the repository source (no live URL provided).
+    // Stack verified against the repository source.
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
     github: "https://github.com/Exploring-glitch/Task-Manager",
-    status: "complete",
+    live: "https://task-manager-pi-eight-72.vercel.app/",
+    status: "live",
   },
   {
     name: "URL Shortener",

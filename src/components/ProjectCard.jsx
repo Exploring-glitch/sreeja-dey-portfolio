@@ -1,4 +1,5 @@
-import { ArrowUpRight, Github, Server } from "lucide-react";
+import { ArrowUpRight, Server } from "lucide-react";
+import { GithubIcon } from "./icons";
 
 function StatusBadge({ status }) {
   if (status === "live") {
@@ -65,7 +66,7 @@ export default function ProjectCard({ project }) {
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 rounded-lg border border-[#E7E5E4] px-3.5 py-2 text-[13px] font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
-              <Github size={14} aria-hidden="true" />
+              <GithubIcon size={14} />
               GitHub
             </a>
           )}

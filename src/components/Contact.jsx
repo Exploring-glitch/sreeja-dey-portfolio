@@ -1,4 +1,4 @@
-import { Code2, Github, Linkedin } from "lucide-react";
+import { GithubIcon, LinkedinIcon, LeetcodeIcon } from "./icons";
 import SectionHeading from "./SectionHeading";
 import { profile } from "../data/portfolio";
 
@@ -21,7 +21,7 @@ export default function Contact() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
-              <Github size={16} aria-hidden="true" />
+              <GithubIcon size={16} />
               GitHub
             </a>
             <a
@@ -30,7 +30,7 @@ export default function Contact() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
-              <Linkedin size={16} aria-hidden="true" />
+              <LinkedinIcon size={16} />
               LinkedIn
             </a>
             <a
@@ -39,7 +39,7 @@ export default function Contact() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-[#E7E5E4] bg-[#FAFAF9] px-4 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
-              <Code2 size={16} aria-hidden="true" />
+              <LeetcodeIcon size={16} />
               LeetCode
             </a>
             {hasEmail ? (

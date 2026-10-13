@@ -1,4 +1,4 @@
-import { Github, Linkedin, Code2 } from "lucide-react";
+import { GithubIcon, LinkedinIcon, LeetcodeIcon } from "./icons";
 import { profile } from "../data/portfolio";
 
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
             aria-label="GitHub"
             className="inline-flex items-center gap-1.5 text-[#57534E] transition hover:text-[#3B6EA5]"
           >
-            <Github size={16} aria-hidden="true" />
+            <GithubIcon size={16} />
             <span className="sr-only sm:not-sr-only">GitHub</span>
           </a>
           <a
@@ -28,7 +28,7 @@ export default function Footer() {
             aria-label="LinkedIn"
             className="inline-flex items-center gap-1.5 text-[#57534E] transition hover:text-[#3B6EA5]"
           >
-            <Linkedin size={16} aria-hidden="true" />
+            <LinkedinIcon size={16} />
             <span className="sr-only sm:not-sr-only">LinkedIn</span>
           </a>
           <a
@@ -38,7 +38,7 @@ export default function Footer() {
             aria-label="LeetCode"
             className="inline-flex items-center gap-1.5 text-[#57534E] transition hover:text-[#3B6EA5]"
           >
-            <Code2 size={16} aria-hidden="true" />
+            <LeetcodeIcon size={16} />
             <span className="sr-only sm:not-sr-only">LeetCode</span>
           </a>
         </div>

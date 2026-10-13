@@ -1,4 +1,5 @@
-import { ArrowUpRight, Code2, Github } from "lucide-react";
+import { ArrowUpRight, Code2 } from "lucide-react";
+import { GithubIcon } from "./icons";
 import SectionHeading from "./SectionHeading";
 import { profile } from "../data/portfolio";
 
@@ -45,7 +46,7 @@ export default function Dsa() {
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 rounded-lg border border-[#E7E5E4] px-4 py-2 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
-              <Github size={15} aria-hidden="true" />
+              <GithubIcon size={15} />
               GitHub
             </a>
           </div>

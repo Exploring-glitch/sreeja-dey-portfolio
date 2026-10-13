@@ -1,4 +1,5 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./icons";
 import { profile } from "../data/portfolio";
 
 export default function Hero() {
@@ -49,7 +50,7 @@ export default function Hero() {
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 font-medium text-[#57534E] transition hover:text-[#3B6EA5]"
             >
-              <Github size={16} aria-hidden="true" />
+              <GithubIcon size={16} />
               GitHub
             </a>
             <a
@@ -58,7 +59,7 @@ export default function Hero() {
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 font-medium text-[#57534E] transition hover:text-[#3B6EA5]"
             >
-              <Linkedin size={16} aria-hidden="true" />
+              <LinkedinIcon size={16} />
               LinkedIn
             </a>
           </div>

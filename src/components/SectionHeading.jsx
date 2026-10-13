@@ -6,11 +6,11 @@ export default function SectionHeading({ eyebrow, title, description }) {
           {eyebrow}
         </p>
       )}
-      <h2 className="text-2xl font-semibold tracking-tight text-[#1C1917] sm:text-3xl">
+      <h2 className="max-w-xl text-2xl font-semibold tracking-tight text-balance text-[#1C1917] sm:text-3xl">
         {title}
       </h2>
       {description && (
-        <p className="mt-3 leading-relaxed text-[#57534E]">{description}</p>
+        <p className="mt-3 max-w-2xl leading-relaxed text-pretty text-[#57534E]">{description}</p>
       )}
     </div>
   );

@@ -15,40 +15,40 @@ export default function Hero() {
             BCA student · Open to internships
           </p>
 
-          <h1 className="mt-6 text-4xl leading-[1.1] font-semibold tracking-tight text-[#1C1917] sm:text-5xl">
+          <h1 className="mt-6 max-w-xl text-4xl leading-[1.08] font-semibold tracking-tight text-balance text-[#1C1917] sm:text-5xl">
             Hi, I&apos;m Sreeja Dey.
           </h1>
-          <p className="mt-3 text-xl leading-snug text-[#1C1917] sm:text-2xl">
+          <p className="mt-3 max-w-xl text-xl leading-snug text-balance text-[#1C1917] sm:text-2xl">
             I&apos;m a developer who enjoys turning ideas into useful digital
             products.
           </p>
-          <p className="mt-4 max-w-xl leading-relaxed text-[#57534E]">
+          <p className="mt-4 max-w-xl leading-relaxed text-pretty text-[#57534E]">
             {profile.summary}
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#1C1917] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-lg bg-[#1C1917] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#3B6EA5]"
             >
               Explore My Work
               <ArrowDown size={15} aria-hidden="true" />
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#E7E5E4] bg-white px-5 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-2 rounded-lg border border-[#E7E5E4] bg-white px-5 py-2.5 text-sm font-medium text-[#1C1917] transition hover:border-[#3B6EA5] hover:text-[#3B6EA5]"
             >
               <Mail size={15} aria-hidden="true" />
               Get In Touch
             </a>
           </div>
 
-          <div className="mt-6 flex items-center gap-4 text-sm">
+          <div className="mt-6 flex items-center gap-2 text-sm">
             <a
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 font-medium text-[#57534E] transition hover:text-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md px-2 py-2 font-medium text-[#57534E] transition hover:text-[#3B6EA5] hover:underline hover:underline-offset-4"
             >
               <GithubIcon size={16} />
               GitHub
@@ -57,7 +57,7 @@ export default function Hero() {
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 font-medium text-[#57534E] transition hover:text-[#3B6EA5]"
+              className="inline-flex min-h-[44px] items-center gap-1.5 rounded-md px-2 py-2 font-medium text-[#57534E] transition hover:text-[#3B6EA5] hover:underline hover:underline-offset-4"
             >
               <LinkedinIcon size={16} />
               LinkedIn

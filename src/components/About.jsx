@@ -6,7 +6,7 @@ export default function About() {
       <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
         <SectionHeading eyebrow="About" title="A student developer learning by building" />
         <div className="reveal grid gap-8 md:grid-cols-[1.4fr_1fr]">
-          <div className="space-y-4 leading-relaxed text-[#44403C]">
+          <div className="max-w-[65ch] space-y-4 leading-relaxed text-pretty text-[#44403C]">
             <p>
               I&apos;m studying for my BCA at Techno India University, Kolkata,
               where I started with C and Python and gradually moved toward web

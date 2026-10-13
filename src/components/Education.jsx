@@ -27,7 +27,7 @@ export default function Education() {
               </div>
             </div>
           ))}
-          <p className="reveal text-sm text-[#8A8580]">
+          <p className="reveal text-sm leading-relaxed text-[#57534E]">
             No employment history or certifications listed — I&apos;m applying
             for my first internships.
           </p>

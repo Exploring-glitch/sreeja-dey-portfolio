@@ -3,6 +3,7 @@ import { useEffect } from "react";
 /** Adds `.is-visible` to `.reveal` elements on scroll. No deps, respects reduced motion. */
 export default function useReveal() {
   useEffect(() => {
+    document.documentElement.classList.add("js");
     const els = Array.from(document.querySelectorAll(".reveal"));
     if (!("IntersectionObserver" in window)) {
       els.forEach((el) => el.classList.add("is-visible"));

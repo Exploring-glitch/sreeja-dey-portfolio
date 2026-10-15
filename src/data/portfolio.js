@@ -118,9 +118,11 @@ export const projects = [
 
 export const education = [
   {
-    degree: "Bachelor of Computer Applications (BCA)",
-    school: "Techno India University, Kolkata",
+    degree: "Bachelors in Computer Applications (BCA)",
+    school: "Techno India University",
+    location: "Kolkata, India",
+    period: "September 2024 – May 2028",
     detail:
-      "Undergraduate studies with a focus on web development, databases, and programming fundamentals.",
+      "CGPA: 9.3/10 (through semester 4). Undergraduate studies with a focus on web development, databases, and programming fundamentals.",
   },
 ];

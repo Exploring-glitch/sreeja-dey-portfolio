@@ -140,3 +140,15 @@ export const education = [
     detail: "Completed higher secondary schooling (Class 11–12) under CBSE board.",
   },
 ];
+
+export const hackathons = [
+  {
+    event: "Smart India Hackathon 2026 — Aarogya AI",
+    location: "Kolkata",
+    period: "August 2026",
+    highlights: [
+      "Engineered Aarogya AI, a native mobile application that analyzes packaged-food ingredients through barcode/image scanning and identifies healthier alternatives based on nutritional composition.",
+      "Ranked among the Top 10 teams at Smart India Hackathon 2026 by engineering Aarogya AI.",
+    ],
+  },
+];

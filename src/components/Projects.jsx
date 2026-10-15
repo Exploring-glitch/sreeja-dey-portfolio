@@ -9,7 +9,7 @@ export default function Projects() {
         <SectionHeading
           eyebrow="Projects"
           title="Featured work"
-          description="Real projects with verified links only — no fake demos, screenshots, or invented features."
+          description="Full-stack projects with live demos and source code — spanning social networking, hiring marketplaces, developer tools, and team productivity."
         />
         <div className="grid items-stretch gap-5 md:grid-cols-2">
           {projects.map((p) => (

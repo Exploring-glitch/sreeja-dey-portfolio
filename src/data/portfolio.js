@@ -49,9 +49,17 @@ export const skillGroups = [
 
 export const projects = [
   {
-    name: "StatiQ",
+    name: "StatiQ — Startup Hiring Marketplace",
+    tagline: "Wellfound-style hiring marketplace connecting job seekers with startups",
     description:
-      "StatiQ is a hiring marketplace that streamlines the recruitment process for both job seekers and employers. Candidates can explore opportunities, save relevant positions, and submit applications with personalized pitches, while employers can publish job listings, evaluate applicants, and manage candidates throughout the hiring pipeline.",
+      "Wellfound-style hiring marketplace connecting job seekers with startups, enabling job discovery, company profiles, applications, saved jobs, and job alerts through a dark-themed responsive interface.",
+    tech: ["React.js", "Node.js", "Express", "MongoDB", "JWT", "Tailwind CSS"],
+    highlights: [
+      "Independently engineered a hiring marketplace with job discovery, company profiles, applications, saved jobs, and job alerts.",
+      "Developed JWT-based authentication with seeker/employer roles and protected routes, powering profiles, résumé uploads, notifications, and personalized dashboards.",
+      "Built employer workflows for posting and managing jobs (draft/publish/close) with an applicant pipeline (New → Shortlisted → Interview → Offer → Rejected) and rich company brand pages with logo uploads and WYSIWYG content.",
+      "Designed RESTful APIs with Express and MongoDB for jobs, applications, companies, alerts, and notifications — with input validation, rate limiting, and secured file serving.",
+    ],
     live: "https://stati-q.vercel.app/",
     status: "live",
   },

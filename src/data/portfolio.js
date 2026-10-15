@@ -42,15 +42,8 @@ export const skillGroups = [
     items: ["MongoDB", "Supabase", "Git", "GitHub", "REST APIs", "Cursor"],
   },
   {
-    title: "Additional exposure",
-    note: "Explored in coursework / side experiments — not core strengths.",
-    items: [
-      "React Native",
-      "NumPy",
-      "Pandas",
-      "PyTorch",
-      "RAG-based apps",
-    ],
+    title: "AI/ML & Data",
+    items: ["PyTorch", "NumPy", "Pandas", "RAG", "Public APIs"],
   },
 ];
 

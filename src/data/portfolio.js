@@ -57,9 +57,18 @@ export const projects = [
   },
   {
     name: "Waverly",
+    tagline: "Cross-platform social networking app for college students",
     description:
-      "A college-focused, LinkedIn-inspired social platform connecting students and alumni. Supports profiles, posts with threaded discussions, connections, real-time notifications, and global search.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB"],
+      "Cross-platform social networking app enabling college students to build professional profiles, showcase projects, share experiences, and discover career opportunities.",
+    tech: ["React.js", "JavaScript", "Node.js", "MongoDB"],
+    period: "Sep 2024 – May 2028",
+    location: "Kolkata, India",
+    highlights: [
+      "Engineered a cross-platform social networking app with React, enabling college students to build professional profiles, showcase projects, share experiences, and discover career opportunities.",
+      "Developed a Node.js/JavaScript backend with RESTful APIs and MongoDB, powering user profiles, posts, connections, and personalized content workflows.",
+      "Implemented social networking features including user discovery, connection management, profile interactions, and content sharing.",
+      "Integrated React Native frontend workflows with backend services and authentication APIs for a scalable cross-platform experience.",
+    ],
     github: "https://github.com/Exploring-glitch/Waverly",
     live: "https://waverly-six.vercel.app",
     status: "live",

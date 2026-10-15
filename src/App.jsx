@@ -29,6 +29,8 @@ export default function App() {
         <Skills />
         <Projects />
         <Dsa />
+        <Hackathons />
+        <Coursework />
         <Education />
         <Contact />
       </main>

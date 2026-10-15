@@ -27,7 +27,7 @@ export const navLinks = [
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "C++", "Python", "C", "SQL"],
+    items: ["C++", "Python", "JavaScript", "TypeScript", "SQL"],
   },
   {
     title: "Frontend",

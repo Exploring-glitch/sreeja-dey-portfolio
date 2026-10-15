@@ -53,6 +53,14 @@ export default function ProjectCard({ project }) {
         {project.description}
       </p>
 
+      {project.highlights && (
+        <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-[#44403C]">
+          {project.highlights.map((h) => (
+            <li key={h}>{h}</li>
+          ))}
+        </ul>
+      )}
+
       {project.tech && (
         <ul aria-label={`${project.name} technologies`} className="mt-4 flex flex-wrap gap-1.5">
           {project.tech.map((t) => (

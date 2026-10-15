@@ -36,10 +36,6 @@ export const skillGroups = [
     items: ["React.js", "React Native", "Node.js", "Express.js"],
   },
   {
-    title: "Backend",
-    items: ["Node.js", "Express.js", "REST APIs"],
-  },
-  {
     title: "Databases & Tools",
     items: ["MongoDB", "Supabase", "Git", "GitHub", "REST APIs", "Cursor"],
   },

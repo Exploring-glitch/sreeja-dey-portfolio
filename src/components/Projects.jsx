@@ -11,7 +11,7 @@ export default function Projects() {
           title="Featured work"
           description="Full-stack projects with live demos and source code — spanning social networking, hiring marketplaces, developer tools, and team productivity."
         />
-        <div className="grid items-stretch gap-5 md:grid-cols-2">
+        <div className="grid items-stretch gap-5 lg:gap-6 md:grid-cols-2">
           {projects.map((p) => (
             <ProjectCard key={p.name} project={p} />
           ))}

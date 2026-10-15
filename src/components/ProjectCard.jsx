@@ -30,11 +30,24 @@ export default function ProjectCard({ project }) {
   return (
     <article className="reveal flex min-w-0 flex-col rounded-xl border border-[#E7E5E4] bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-16px_rgba(28,25,23,0.3)]">
       <div className="flex items-start justify-between gap-3">
-        <h3 className="min-w-0 text-lg font-semibold tracking-tight text-[#1C1917]">
-          {project.name}
-        </h3>
+        <div className="min-w-0">
+          <h3 className="min-w-0 text-lg font-semibold tracking-tight text-[#1C1917]">
+            {project.name}
+          </h3>
+          {(project.period || project.location) && (
+            <p className="mt-1 text-xs font-medium text-[#57534E]">
+              {[project.period, project.location].filter(Boolean).join(" · ")}
+            </p>
+          )}
+        </div>
         <StatusBadge status={project.status} />
       </div>
+
+      {project.tagline && (
+        <p className="mt-1 text-[13px] font-medium text-[#3B6EA5]">
+          {project.tagline}
+        </p>
+      )}
 
       <p className="mt-2 flex-1 text-[15px] leading-relaxed text-pretty text-[#57534E]">
         {project.description}

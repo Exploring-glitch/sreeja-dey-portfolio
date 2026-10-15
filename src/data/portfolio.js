@@ -152,3 +152,12 @@ export const hackathons = [
     ],
   },
 ];
+
+export const coursework = [
+  "Data Structures and Algorithms",
+  "Computer Networks",
+  "Database Management System",
+  "Machine Learning",
+  "Neural Networks",
+  "Mathematics",
+];

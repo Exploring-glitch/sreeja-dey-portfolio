@@ -39,7 +39,7 @@ export const skillGroups = [
   },
   {
     title: "Databases & Tools",
-    items: ["MongoDB", "Supabase", "Git", "GitHub"],
+    items: ["MongoDB", "Supabase", "Git", "GitHub", "REST APIs", "Cursor"],
   },
   {
     title: "Additional exposure",

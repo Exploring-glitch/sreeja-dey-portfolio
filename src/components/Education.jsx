@@ -21,6 +21,13 @@ export default function Education() {
                 <p className="mt-0.5 text-sm font-medium text-[#3B6EA5]">
                   {e.school}
                 </p>
+                {(e.period || e.location || e.board) && (
+                  <p className="mt-1 text-xs font-medium text-[#57534E]">
+                    {[e.period, e.location, e.board]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </p>
+                )}
                 <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-[#57534E]">
                   {e.detail}
                 </p>

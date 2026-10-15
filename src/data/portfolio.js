@@ -82,25 +82,36 @@ export const projects = [
     status: "live",
   },
   {
-    name: "Task Manager",
+    name: "Shortly — URL Shortener Platform",
+    tagline: "Full-stack URL shortening platform",
     description:
-      "Full-stack task management app with admin and team-member roles. Admins assign and manage tasks; members track progress from a dashboard with analytics, reports, and profile uploads.",
-    // Stack verified against the repository source.
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "JWT"],
-    github: "https://github.com/Exploring-glitch/Task-Manager",
-    live: "https://task-manager-pi-eight-72.vercel.app/",
-    status: "live",
-  },
-  {
-    name: "URL Shortener",
-    description:
-      "MERN URL shortener: shorten links instantly, copy with one click, and — when signed in — manage links, customise slugs, and track clicks.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
-    // Verified: repo exists as Exploring-glitch/URL-Shortener; frontend URL
-    // matches the repo About page. Backend host below was provided directly.
+      "Full-stack URL shortening platform (MERN) enabling users to generate, customize, and manage short links through a responsive web interface.",
+    tech: ["React.js", "MongoDB", "Express", "JWT", "Tailwind CSS"],
+    highlights: [
+      "Engineered a full-stack URL shortening platform using MERN, enabling users to generate, customize, and manage short links.",
+      "Implemented JWT-based authentication and protected user dashboards with secure login/signup workflows.",
+      "Built a persistent link-management system supporting custom aliases, click tracking, URL deletion, and historical URL retrieval.",
+      "Designed RESTful APIs with Express and MongoDB for URL creation, redirection, analytics, and user operations.",
+    ],
     github: "https://github.com/Exploring-glitch/URL-Shortener",
     live: "https://url-shortener-45vx.vercel.app",
     backend: "https://url-shortener-n4ee.onrender.com",
+    status: "live",
+  },
+  {
+    name: "ClickUp — Task Management Platform",
+    tagline: "Full-stack task management platform",
+    description:
+      "Full-stack task management platform enabling admins to assign, monitor, and manage team workflows through a centralized dashboard.",
+    tech: ["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Cloudinary"],
+    highlights: [
+      "Engineered a full-stack task management platform with React, Node.js, Express, and MongoDB, enabling admins to assign, monitor, and manage team workflows.",
+      "Implemented JWT-based authentication, bcrypt password hashing, protected routes, and role-based access control (RBAC) for Admin/Team Member permissions.",
+      "Built RESTful APIs for task assignment, CRUD operations, progress tracking, checklist updates, and team management.",
+      "Developed an analytics and reporting layer with Recharts, ExcelJS, Cloudinary, and MongoDB, enabling real-time insights, downloadable reports, and profile image management.",
+    ],
+    github: "https://github.com/Exploring-glitch/Task-Manager",
+    live: "https://task-manager-pi-eight-72.vercel.app/",
     status: "live",
   },
 ];

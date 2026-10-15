@@ -103,7 +103,7 @@ export const projects = [
     tagline: "Full-stack task management platform",
     description:
       "Full-stack task management platform enabling admins to assign, monitor, and manage team workflows through a centralized dashboard.",
-    tech: ["React.js", "Node.js", "Tailwind CSS", "MongoDB", "Cloudinary"],
+    tech: ["React.js", "Node.js", "Express", "Tailwind CSS", "MongoDB", "Cloudinary", "JWT"],
     highlights: [
       "Engineered a full-stack task management platform with React, Node.js, Express, and MongoDB, enabling admins to assign, monitor, and manage team workflows.",
       "Implemented JWT-based authentication, bcrypt password hashing, protected routes, and role-based access control (RBAC) for Admin/Team Member permissions.",

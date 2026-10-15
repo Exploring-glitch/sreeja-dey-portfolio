@@ -125,4 +125,11 @@ export const education = [
     detail:
       "CGPA: 9.3/10 (through semester 4). Undergraduate studies with a focus on web development, databases, and programming fundamentals.",
   },
+  {
+    degree: "Class 1 to 10",
+    school: "Don Bosco School, Oodlabari",
+    board: "ICSE board",
+    period: "2012 – 2022",
+    detail: "Completed primary and secondary schooling (Class 1–10) under ICSE board.",
+  },
 ];

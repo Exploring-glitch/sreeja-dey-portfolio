@@ -132,4 +132,11 @@ export const education = [
     period: "2012 – 2022",
     detail: "Completed primary and secondary schooling (Class 1–10) under ICSE board.",
   },
+  {
+    degree: "Class 11 and 12",
+    school: "Delhi Public School, Fulbari",
+    board: "CBSE board",
+    period: "2022 – 2024",
+    detail: "Completed higher secondary schooling (Class 11–12) under CBSE board.",
+  },
 ];

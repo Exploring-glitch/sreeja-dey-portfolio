@@ -28,41 +28,46 @@ function StatusBadge({ status }) {
 
 export default function ProjectCard({ project }) {
   return (
-    <article className="reveal flex min-w-0 flex-col rounded-xl border border-[#E7E5E4] bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-16px_rgba(28,25,23,0.3)]">
+    <article className="reveal flex h-full min-w-0 flex-col rounded-xl border border-[#E7E5E4] bg-white p-6 transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-16px_rgba(28,25,23,0.3)] sm:p-7">
       <div className="flex items-start justify-between gap-3">
-        <div className="min-w-0">
-          <h3 className="min-w-0 text-lg font-semibold tracking-tight text-[#1C1917]">
+        <div className="min-w-0 flex-1">
+          <h3 className="min-w-0 text-lg leading-snug font-semibold tracking-tight text-balance text-[#1C1917]">
             {project.name}
           </h3>
-          {(project.period || project.location) && (
-            <p className="mt-1 text-xs font-medium text-[#57534E]">
-              {[project.period, project.location].filter(Boolean).join(" · ")}
-            </p>
-          )}
+          <p className="mt-1 min-h-[16px] text-xs font-medium text-[#57534E]">
+            {[project.period, project.location].filter(Boolean).join(" · ") ||
+              "\u00A0"}
+          </p>
         </div>
-        <StatusBadge status={project.status} />
+        <span className="shrink-0">
+          <StatusBadge status={project.status} />
+        </span>
       </div>
 
-      {project.tagline && (
-        <p className="mt-1 text-[13px] font-medium text-[#3B6EA5]">
-          {project.tagline}
-        </p>
-      )}
+      <p className="mt-1 min-h-[20px] text-[13px] font-medium text-[#3B6EA5]">
+        {project.tagline || "\u00A0"}
+      </p>
 
-      <p className="mt-2 flex-1 text-[15px] leading-relaxed text-pretty text-[#57534E]">
+      <p className="mt-2 min-h-[66px] text-[15px] leading-relaxed text-pretty text-[#57534E]">
         {project.description}
       </p>
 
       {project.highlights && (
-        <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-[#44403C]">
+        <ul className="mt-4 flex flex-1 flex-col justify-start gap-2.5">
           {project.highlights.map((h) => (
-            <li key={h}>{h}</li>
+            <li key={h} className="flex gap-2.5 text-sm leading-relaxed">
+              <span
+                aria-hidden="true"
+                className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#3B6EA5]/60"
+              />
+              <span className="min-w-0 text-pretty text-[#44403C]">{h}</span>
+            </li>
           ))}
         </ul>
       )}
 
       {project.tech && (
-        <ul aria-label={`${project.name} technologies`} className="mt-4 flex flex-wrap gap-1.5">
+        <ul aria-label={`${project.name} technologies`} className="mt-5 flex flex-wrap gap-1.5">
           {project.tech.map((t) => (
             <li
               key={t}
@@ -78,7 +83,7 @@ export default function ProjectCard({ project }) {
       )}
 
       {(project.live || project.github || project.backend) && (
-        <div className="mt-auto pt-5">
+        <div className="mt-auto pt-6">
           <div className="flex flex-wrap gap-2 border-t border-[#E7E5E4] pt-4">
           {project.live && (
             <a

@@ -30,8 +30,8 @@ export const skillGroups = [
     items: ["C++", "Python", "JavaScript", "TypeScript", "SQL"],
   },
   {
-    title: "Frontend",
-    items: ["React", "HTML", "CSS", "Tailwind CSS"],
+    title: "Frameworks & Libraries",
+    items: ["React.js", "React Native", "Node.js", "Express.js"],
   },
   {
     title: "Backend",

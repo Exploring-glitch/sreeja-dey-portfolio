@@ -84,7 +84,7 @@ export default function Hero() {
             <div className="relative order-first justify-self-center md:order-last md:justify-self-end">
               <div
                 aria-hidden="true"
-                className="absolute -inset-3 rounded-full bg-accent-soft"
+                className="absolute -inset-3 rounded-full bg-[radial-gradient(closest-side,var(--color-accent-soft),transparent)]"
               />
               <img
                 src={profile.photo}

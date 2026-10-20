@@ -37,7 +37,7 @@ export default function Navbar() {
           Sreeja Dey
         </a>
 
-        <ul className="hidden items-center gap-6 md:flex">
+        <ul className="hidden items-center gap-5 md:flex lg:gap-6">
           {navLinks.map((link) => {
             const isActive = active === link.href.slice(1);
             return (

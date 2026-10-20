@@ -1,12 +1,25 @@
 import SectionHeading from "./SectionHeading";
 
+const facts = [
+  {
+    label: "Studying",
+    value: "BCA, Techno India University, Kolkata",
+  },
+  { label: "Focus", value: "Full-stack web development (MERN)" },
+  { label: "Practice", value: "DSA in C++, LeetCode" },
+  { label: "Looking for", value: "Internships & software engineering opportunities" },
+];
+
 export default function About() {
   return (
-    <section id="about" className="scroll-mt-20 border-b border-[#E7E5E4]">
-      <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-20">
-        <SectionHeading eyebrow="About" title="A student developer learning by building" />
-        <div className="reveal grid gap-8 md:grid-cols-[1.4fr_1fr]">
-          <div className="max-w-[65ch] space-y-4 leading-relaxed text-pretty text-[#44403C]">
+    <section id="about" className="scroll-mt-20 border-b border-line">
+      <div className="mx-auto max-w-5xl px-5 py-16 sm:px-8 sm:py-24">
+        <SectionHeading
+          eyebrow="About"
+          title="A student developer learning by building"
+        />
+        <div className="reveal grid gap-10 md:grid-cols-[1.5fr_1fr] md:gap-12">
+          <div className="max-w-[65ch] space-y-4 text-pretty leading-relaxed text-muted">
             <p>
               I&apos;m studying for my BCA at Techno India University, Kolkata,
               where I started with C and Python and gradually moved toward web
@@ -27,33 +40,26 @@ export default function About() {
               projects and keep improving.
             </p>
           </div>
-          <aside className="h-fit rounded-xl border border-[#E7E5E4] bg-white p-6">
-            <h3 className="text-sm font-semibold tracking-wide text-[#1C1917] uppercase">
+
+          <aside className="h-fit rounded-2xl border border-line bg-white p-6 sm:p-7">
+            <h3 className="flex items-center gap-2 text-[11px] font-semibold tracking-[0.16em] text-muted uppercase">
+              <span
+                aria-hidden="true"
+                className="h-1.5 w-1.5 rounded-full bg-accent"
+              />
               At a glance
             </h3>
-            <dl className="mt-4 space-y-3 text-sm">
-              <div>
-                <dt className="font-medium text-[#1C1917]">Studying</dt>
-                <dd className="text-[#57534E]">
-                  BCA, Techno India University, Kolkata
-                </dd>
-              </div>
-              <div>
-                <dt className="font-medium text-[#1C1917]">Focus</dt>
-                <dd className="text-[#57534E]">
-                  Full-stack web development (MERN)
-                </dd>
-              </div>
-              <div>
-                <dt className="font-medium text-[#1C1917]">Practice</dt>
-                <dd className="text-[#57534E]">DSA in C++, LeetCode</dd>
-              </div>
-              <div>
-                <dt className="font-medium text-[#1C1917]">Looking for</dt>
-                <dd className="text-[#57534E]">
-                  Internships &amp; software engineering opportunities
-                </dd>
-              </div>
+            <dl className="mt-5 space-y-4 text-sm">
+              {facts.map((fact) => (
+                <div key={fact.label}>
+                  <dt className="text-[11px] font-medium tracking-[0.08em] text-muted uppercase">
+                    {fact.label}
+                  </dt>
+                  <dd className="mt-1 leading-snug font-medium text-ink">
+                    {fact.value}
+                  </dd>
+                </div>
+              ))}
             </dl>
           </aside>
         </div>

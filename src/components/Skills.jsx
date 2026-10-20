@@ -10,7 +10,7 @@ export default function Skills() {
           title="What I work with"
           description="Grouped by how I actually use them. No proficiency bars — the projects below show what I can do."
         />
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           {skillGroups.map((group) => (
             <div
               key={group.title}
